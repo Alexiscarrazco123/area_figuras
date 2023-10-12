@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"area"</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Figuras Geométricas</h1>
+        <p>Elige la figura con la que quieres trabajar</p>
+      
+        
+          <select name="figura" id="figura">
+            <option value="cuadrado">cuadrado</option>
+            <option value="rectagulo">rectangulo</option>
+            <option value="triangulo">triangulo</option>
+          </select>
+        </div>
+        <section class="instrucciones">
+          <h3>Has elegido el ${figura}!</h3>
+          <p>¿Cuáles son sus dimensiones?</p>
+          <form action="" id = "fig">
+            <label for="base"><input type="number" id ="base" placeholder="Ingresa la base"></label>
+            <label for="altura"><input type="number" id="altura" placeholder="Ingresa la altura"></label>
+            <input type="button" value="calcular" figura id ="calcular">
+          </form>
+          <section class="resultados">
+            <div id ='result'></div>
+            <p>Tu ${figure} tiene</p>
+            <ul>
+              <li>area: </li>
+         
+            </ul>
+         <script src ="area.js"></script>
+</body>
+</html>
